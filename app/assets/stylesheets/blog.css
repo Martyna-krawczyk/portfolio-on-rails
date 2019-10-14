@@ -1,0 +1,105 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 55px;
+}
+
+.blog-items {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-card {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: var(--green-trans2);
+  -webkit-box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.18);
+  box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.18);
+  width: 90%;
+}
+
+.blog-card:hover {
+  transform: scale(1.1);
+}
+
+
+.description h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 35px;
+  text-align: right;
+}
+
+.description p {
+  text-align:right;
+}
+
+.alt h1 {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.alt p {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.meta li {
+    display: inline-block;
+    margin: 0px 5px;
+    text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#blog1 {
+  background-color: var(--razzmic-berry-trans);
+}
+#blog2 {
+  background-color: var(--rocket-metallic);
+}
+
+#blog3 {
+  background-color: var(--spanish-grey);
+}
+
+#blog4 {
+  background-color: var(--light-coral);
+}
+
+#blog5 {
+  background-color: var(--sage);
+}
+
+
+
+@media (max-width: 1000px) {
+  #copy {
+    display: none;
+  }
+  .blog-card {
+    width: 981px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #copy {
+    display: none;
+  }
+}

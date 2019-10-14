@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <title>MK-Portfolio</title>
+</head>
+
+<body>
+  <div class="container1">
+  <%=render "shared/nav_bar.html.erb"%>
+    <div class="hero-container">
+      <h1>Contact</h1>
+    </div>
+  </div>
+  <%=render "shared/socials_block.html.erb"%>
+  <div class="info">
+  </div>
+  <div class="container3">
+    <div class="form-container">
+    <h3 id="contact">Get in touch</h3>
+  <div class=contact_form, id='contact'>
+        <%= form_with model: @message do |f| %>
+        <fieldset>
+        <%= f.label :name  %><br>
+        <%= f.text_field :name, placeholder: "Your name", tabindex:"1" %><br>
+        </fieldset>
+        <fieldset>
+        <%= f.label :email %><br>
+        <%= f.text_field :email, placeholder: "Your Email Address", tabindex: "2" %><br>
+        </fieldset>
+        <fieldset>
+        <%= f.label :message %><br>
+        <%= f.text_area :message, placeholder: "Type your Message Here....", tabindex:"3" %><br>
+        </fieldset>
+        <fieldset>
+        <button name="submit" type="submit" value="Send" id="contact-submit" data-submit="...Sending">Submit</button>
+        <%= f.submit "Send" %>
+        </fieldset>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</body>

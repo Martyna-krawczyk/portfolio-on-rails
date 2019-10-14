@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <title>MK-Portfolio</title>
+</head>
+
+<body>
+  <div class="container1">
+  <%=render "shared/nav_bar.html.erb"%>
+    <div class="hero-container">
+      <h1>Portfolio</h1>
+    </div>
+  </div>
+  <%=render "shared/socials_block.html.erb"%>
+  <div class="info">
+    <p>The below portfolio items are examples of programming works, front-end web design, as well as straight HTML and
+      CSS completed both during my time at Coder Academy.</p>
+  </div>
+  <div class="container2">
+    <div class="card2">
+      <div class="card-content2">
+        <%=image_tag("terminal-application", alt:"application image", class:"icon1")%>
+        <h4>Terminal Application</h4>
+        <ul>
+          <li>Ruby</li>
+          <li>Terminal</li>
+        </ul>
+        <a href="https://github.com/Martyna-krawczyk?tab=repositories" target="_blank" class="green-button">More</a>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card-content2">
+        <%=image_tag("web-design-automation", alt:"website image", class:"icon2")%>
+        <h4>Web Design</h4>
+        <ul>
+          <li>Wordpress</li>
+          <li>Gravity Forms</li>
+          <li>Zapier</li>
+        </ul>
+        <a href="https://1300driveways.com.au/" target="_blank" class="green-button">More</a>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card-content2">
+        <%=image_tag("portfolio", alt:"portfolio website image", class:"icon3")%>
+        <h4>Portfolio</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <a href="https://github.com/Martyna-krawczyk?tab=repositories" target="_blank" class="green-button">More</a>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card-content2">
+        <%=image_tag("zapier-integration", alt:"website form image", class:"icon4")%>
+        <h4>Automation</h4>
+        <ul>
+          <li>Gravity Forms</li>
+          <li>Zapier</li>
+        </ul>
+        <a href="https://requestartists.com.au/" target="_blank" class="green-button">More</a>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card-content2">
+        <%=image_tag("web-design", alt:"adminflow website image", class:"icon5")%>
+        <h4>Web Design</h4>
+        <ul>
+          <li>Wordpress</li>
+          <li>Gravity Forms</li>
+        </ul>
+        <a href="https://www.adminflow.com.au/" target="_blank" class="green-button">More</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
